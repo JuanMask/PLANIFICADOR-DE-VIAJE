@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPA ESTADIO</title>
+
+    <link rel="stylesheet" href="ubicaciones-styles.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    
+    <header>
+        <h2>Mapa del Estadio</h2>
+    </header>
+
+    <div id="controls">
+
+        <div><strong>ORIGEN:</strong> Estadio Azteca</div>
+
+        <!-- 🔍 Buscador de categorías -->
+        <select id="category">
+            <option value="hotel">Hoteles</option>
+            <option value="restaurant">Restaurantes</option>
+            <option value="bank">Bancos</option>
+            <option value="tourism">Atracciones</option>
+        </select>
+
+        <button id="btnSearch">Buscar</button>
+        
+        <!-- Modo de transporte -->
+        <select id="mode">
+            <option value="driving">Conducir</option>
+            <option value="walking">Caminar</option>
+            <option value="cycling">Bicicleta</option>
+        </select>
+
+        <button id="btnClear">LIMPIAR</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="results">
+        Resultados...
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="ubicaciones-script.js"></script>
+</body>
+</html>
