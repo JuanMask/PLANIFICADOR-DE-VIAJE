@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPlanner - Menú Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles3.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/passenger-with-baggage.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-plane-departure me-2"></i>
+                <span class="brand-text">TravelPlanner</span>
+            </a>
+            <div class="navbar-text ms-auto">
+                <span class="badge badge-live">
+                    <i class="fas fa-compass"></i> Menú de Viajes
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold animate-text">
+                        <i class="fas fa-map-signs me-2"></i>Explora México
+                    </h1>
+                    <p class="lead animate-text-delay">
+                        Descubre los mejores lugares turísticos, hoteles, museos y restaurantes
+                    </p>
+                    <div class="hero-stats animate-text-delay-2">
+                        <div class="stat-item">
+                            <i class="fas fa-hotel"></i>
+                            <span>50+ Hoteles</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-landmark"></i>
+                            <span>30+ Museos</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>100+ Restaurantes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="menu-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">
+                <i class="fas fa-th-large me-2"></i>Selecciona una Categoría
+            </h2>
+            <p class="section-subtitle text-center mb-5 animate-on-scroll">
+                Explora nuestras recomendaciones organizadas por categoría
+            </p>
+
+            <div class="row g-4">
+                <div class="col-xl-3 col-lg-6">
+                    <div class="menu-card hotel-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hoteles" class="card-img">
+                        <div class="card-content">
+                            <h3>Hoteles</h3>
+                            <p>Encuentra el alojamiento perfecto para tu estadía</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-wifi"></i> WiFi</span>
+                                <span><i class="fas fa-swimming-pool"></i> Alberca</span>
+                                <span><i class="fas fa-utensils"></i> Restaurante</span>
+                            </div>
+                            <a href="hoteles.html" class="btn btn-card">
+                                <i class="fas fa-arrow-right me-2"></i>Explorar Hoteles
+                            </a>
+                        </div>
+                        <div class="card-badge">
+                            <i class="fas fa-star"></i> Premium
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <div class="menu-card museum-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Museos" class="card-img">
+                        <div class="card-content">
+                            <h3>Museos</h3>
+                            <p>Sumérgete en la cultura e historia de México</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-palette"></i> Arte</span>
+                                <span><i class="fas fa-history"></i> Historia</span>
+                                <span><i class="fas fa-camera"></i> Fotografía</span>
+                            </div>
+                            <a href="museos.html" class="btn btn-card">
+                                <i class="fas fa-arrow-right me-2"></i>Explorar Museos
+                            </a>
+                        </div>
+                        <div class="card-badge">
+                            <i class="fas fa-graduation-cap"></i> Cultural
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <div class="menu-card restaurant-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurantes" class="card-img">
+                        <div class="card-content">
+                            <h3>Restaurantes</h3>
+                            <p>Descubre la gastronomía mexicana y internacional</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-pepper-hot"></i> Mexicana</span>
+                                <span><i class="fas fa-pizza-slice"></i> Internacional</span>
+                                <span><i class="fas fa-cocktail"></i> Bar</span>
+                            </div>
+                            <a href="restaurantes.html" class="btn btn-card">
+                                <i class="fas fa-arrow-right me-2"></i>Explorar Restaurantes
+                            </a>
+                        </div>
+                        <div class="card-badge">
+                            <i class="fas fa-fire"></i> Popular
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <div class="menu-card all-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Todos Juntos" class="card-img">
+                        <div class="card-content">
+                            <h3>Todos Juntos</h3>
+                            <p>Explora todas las categorías en un solo lugar</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-layer-group"></i> Completo</span>
+                                <span><i class="fas fa-filter"></i> Filtros</span>
+                                <span><i class="fas fa-map-marked-alt"></i> Mapa</span>
+                            </div>
+                            <a href="todos.html" class="btn btn-card">
+                                <i class="fas fa-arrow-right me-2"></i>Ver Todo
+                            </a>
+                        </div>
+                        <div class="card-badge">
+                            <i class="fas fa-bolt"></i> Completo
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <div class="help-card animate-on-scroll">
+                        <i class="fas fa-question-circle fa-2x mb-3"></i>
+                        <h4>¿Necesitas ayuda?</h4>
+                        <p>¿No sabes qué categoría elegir? Comienza con "Todos Juntos" para ver todas las opciones disponibles</p>
+                        <a href="todos.html" class="btn btn-help">
+                            <i class="fas fa-play-circle me-2"></i>Empezar Exploración Completa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        <i class="fas fa-compass me-2"></i>TravelPlanner - Menú Principal
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+                observer.observe(el);
+            });
+            
+            document.querySelectorAll('.menu-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
