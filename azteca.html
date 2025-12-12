@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azteca</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        #map {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #map img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            transition: transform 0.5s ease;
+        }
+        #map img:hover {
+            transform: scale(1.05);
+        }
+        #partidos {
+            margin: 40px auto;
+            width: 80%;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        #partidos h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #ffd700;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffd700;
+            color: #000;
+            font-size: 1.1em;
+        }
+        tr {
+            background-color: rgba(255,255,255,0.1);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255,255,255,0.2);
+        }
+        tr:hover {
+            background-color: rgba(255,255,255,0.4);
+            transform: scale(1.02);
+        }
+        #reloj {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #00ffcc;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mapa del estadio</h1>
+    </header>
+    <div id="map">
+        <img src="https://estadiobanorte.com.mx/wp-content/uploads/2021/11/mapa.jpg" alt="Mapa del estadio">
+    </div>
+
+    <!-- Reloj en vivo -->
+    <div id="reloj"></div>
+
+    <!-- Sección de partidos -->
+    <div id="partidos">
+        <h2>Próximos partidos</h2>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Evento</th>
+            </tr>
+            <tr>
+                <td>15 Diciembre 2025</td>
+                <td>19:00</td>
+                <td>América vs Chivas</td>
+            </tr>
+            <tr>
+                <td>20 Diciembre 2025</td>
+                <td>18:30</td>
+                <td>América vs Pumas</td>
+            </tr>
+            <tr>
+                <td>5 Enero 2026</td>
+                <td>20:00</td>
+                <td>América vs Cruz Azul</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // Función para mostrar reloj en vivo
+        function actualizarReloj() {
+            const ahora = new Date();
+            const hora = ahora.toLocaleTimeString();
+            document.getElementById("reloj").textContent = "Hora actual: " + hora;
+        }
+        setInterval(actualizarReloj, 1000);
+        actualizarReloj();
+    </script>
+</body>
+</html>
