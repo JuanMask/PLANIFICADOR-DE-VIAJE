@@ -1,47 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAPA ESTADIO</title>
+    <title>PLANIFICADOR DE VIAJES "LA AVENTURA TOTAL"</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/ubicaciones-styles.css" type="text/css">
     <link rel="icon" href="IMAGENES/RESTAURANTE.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
-<body>
-    
-    <header>
-        <h2>Mapa del Estadio</h2>
+<body class="bg-light">
+
+    <!-- HEADER estilo navbar -->
+    <header class="navbar navbar-dark bg-primary shadow-sm px-3">
+        <h2 class="navbar-brand fw-bold m-0">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            PLANIFICADOR DE VIAJES "LA AVENTURA TOTAL"
+        </h2>
     </header>
 
-    <div id="controls">
+    <!-- CONTROLS -->
+    <div id="controls" class="shadow-sm bg-white">
+        <div class="fw-bold text-primary">ORIGEN: Estadio Azteca</div>
 
-        <div><strong>ORIGEN:</strong> Estadio Azteca</div>
-
-        <!-- 🔍 Buscador de categorías -->
-        <select id="category">
+        <!-- 🔍 Categorías -->
+        <select id="category" class="form-select form-select-sm">
             <option value="hotel">Hoteles</option>
             <option value="restaurant">Restaurantes</option>
             <option value="bank">Bancos</option>
             <option value="tourism">Atracciones</option>
         </select>
 
-        <button id="btnSearch">Buscar</button>
-        
-        <!-- Modo de transporte -->
-        <select id="mode">
+        <button id="btnSearch" class="btn btn-success btn-sm shadow-sm">
+            <i class="bi bi-search"></i> Buscar
+        </button>
+
+        <!-- Transporte -->
+        <select id="mode" class="form-select form-select-sm">
             <option value="driving">Conducir</option>
             <option value="walking">Caminar</option>
             <option value="cycling">Bicicleta</option>
         </select>
 
-        <button id="btnClear">LIMPIAR</button>
+        <button id="btnClear" class="btn btn-danger btn-sm shadow-sm">
+            <i class="bi bi-trash"></i> Limpiar
+        </button>
     </div>
 
-    <div id="map"></div>
+    <!-- MAPA -->
+    <div id="map" class="shadow-sm"></div>
 
-    <div id="results">
+    <!-- RESULTADOS -->
+    <div id="results" class="shadow-sm bg-white">
         Resultados...
     </div>
 
