@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azteca</title>
     <link rel="icon" href="IMAGENES/azteca.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="CSS/styles_partidos.css">
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -87,14 +88,27 @@
             from {opacity: 0;}
             to {opacity: 1;}
         }
+
+        .boton {
+            align-items: center;
+            justify-self: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            transform: scale(1.2);
+        }
+
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Mapa del estadio</h1>
+        <h1>Estadio Banorte</h1>
     </header>
     <div id="map">
-        <img src="https://estadiobanorte.com.mx/wp-content/uploads/2021/11/mapa.jpg" alt="Mapa del estadio">
+        <img src="https://estadiobanorte.com.mx/wp-content/uploads/2021/11/mapa.jpg" alt="Mapa del estadio" width="800px">
     </div>
 
     <!-- Reloj en vivo -->
@@ -107,7 +121,7 @@
             <tr>
                 <th>Fecha</th>
                 <th>Hora</th>
-                <th>Evento</th>
+                <th>Partido</th>
             </tr>
             <tr>
                 <td>11 junio 2026</td>
@@ -127,6 +141,9 @@
         </table>
     </div>
 
+    <div class="boton">
+        <a href="menu.html" target="_blank"><button class="btn">PLANIFICA TU VISITA</button></a>
+    </div>
     <script>
         // Función para mostrar reloj en vivo
         function actualizarReloj() {

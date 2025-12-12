@@ -3,26 +3,87 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MAPA ESTADIO - Rutas con costos y PDF</title>
+<title>MAPA ESTADIO - Rutas con costos</title>
 
 <link rel="stylesheet" href="CSS/ubicaciones-styles.css" type="text/css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="icon" href="IMAGENES/iconoazteca.svg" type="image/svg+xml">
 <style>
-  body{font-family:Arial;margin:0}
-  header{padding:12px;background:#0b5;color:#fff}
-  #controls{display:flex;gap:8px;align-items:center;padding:8px;background:#fafafa;flex-wrap:wrap}
-  #map{height:55vh}
-  #results{padding:8px; max-height:35vh; overflow:auto; border-top:1px solid #ddd}
-  .route-card{padding:8px;margin:6px 0;border:1px solid #ddd;border-left:6px solid #0078ff}
-  table{width:100%;border-collapse:collapse}
-  th,td{padding:6px;border:1px solid #eee;text-align:left;font-size:13px}
-  button{padding:6px 10px}
-  input[type="number"]{width:120px;padding:6px}
+  body{
+    font-family:Arial;
+    margin:0;
+  }
+
+  header{
+    padding:12px;
+    background:#0b5;
+    color:#fff;
+    text-align: center;
+  }
+
+  #controls{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    padding:8px;
+    background:#fafafa;
+    flex-wrap:wrap;
+  }
+
+  #map{
+    height:55vh;
+  }
+
+  #results{padding:8px;
+    max-height:35vh;
+    overflow:auto;
+    border-top:1px solid #ddd;
+  }
+
+  .route-card{
+    padding:8px;
+    margin:6px 0;
+    border:1px solid #ddd;
+    border-left:6px solid #0078ff;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse
+  }
+
+  th,td{
+    padding:6px;
+    border:1px solid #eee;
+    text-align:left;
+    font-size:13px;
+  }
+
+  button{
+    padding:6px 10px;
+    cursor: pointer;
+    background:rgba(0, 187, 19, 0.655);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+  }
+
+  button:hover{
+    transform: scale(1.1);
+  }
+
+  input[type="number"]{
+    width:120px;
+    padding:6px;
+  }
+
+
 </style>
 </head>
 <body>
 
-<header><h2>Mapa del Estadio — Rutas por Presupuesto (con costos, tiempo y PDF)</h2></header>
+<header><h2>ESTADIO BANORTE</h2></header>
 
 <div id="controls">
   <label><strong>Presupuesto total (MXN):</strong></label>
@@ -37,7 +98,6 @@
 
   <button id="btnGenerate">Generar rutas</button>
   <button id="btnBest" title="Resaltar mejor ruta">Mejor ruta</button>
-  <button id="btnExportPDF">Exportar PDF</button>
   <button id="btnClear">Limpiar</button>
 </div>
 
