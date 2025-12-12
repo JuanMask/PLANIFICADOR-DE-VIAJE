@@ -23,7 +23,7 @@ const stadiumMarker = L.marker([stadium[1], stadium[0]], {
     icon: stadiumIcon 
 }).addTo(map).bindPopup(`
     <div class="popup-content">
-        <h6><i class="fas fa-futbol text-primary"></i> Estadio Azteca</h6>
+        <h6><i class="fas fa-futbol text-primary"></i> Estadio Banorte</h6>
         <p class="mb-1"><small>El coloso de Santa Úrsula</small></p>
         <p class="mb-0"><small>Capacidad: 87,000 espectadores</small></p>
     </div>

@@ -1,5 +1,4 @@
-// ===============================
-// MAPA + RUTAS CON COSTOS, TIEMPO, MEJOR RUTA Y EXPORT PDF
+// ==============================
 // ===============================
 
 // Configuración: estadio (lng, lat)
@@ -42,7 +41,7 @@ btnBest.addEventListener('click', highlightBestRoute);
 btnExportPDF.addEventListener('click', exportPDF);
 
 // ---------------------------
-// Simulación: generar lugares (puedes reemplazar por Nominatim real si quieres)
+
 // Para diversidad usamos mezcla: si deseas Nominatim en vivo, reutiliza findPlacesByCategory.
 // ---------------------------
 function simulatePlaces() {
